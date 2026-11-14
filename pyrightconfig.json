@@ -1,0 +1,19 @@
+{
+  "include": [
+    "."
+  ],
+  "extraPaths": [
+    ".",
+    "./electrical_calculator_app"
+  ],
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": [
+        ".",
+        "./electrical_calculator_app"
+      ]
+    }
+  ],
+  "reportMissingImports": "none"
+}

@@ -1,0 +1,303 @@
+[
+  {
+    "Thời gian tính toán": "2026-11-13 00:00:10",
+    "Mã chức năng": "Mạch DC - Định luật Ohm",
+    "Tên chức năng": "Định luật Ohm DC & Công suất - Điện năng",
+    "Thông số đầu vào": {
+      "Điện áp nguồn U (V)": "24.0 V",
+      "Điện trở tải R (Ω)": "4.8 Ω",
+      "Thời gian làm việc t (giờ)": "5.0 giờ"
+    },
+    "Kết quả tính toán": {
+      "Cường độ dòng điện I (A)": "5.0 A",
+      "Công suất tiêu thụ P (W)": "120.0 W",
+      "Điện năng tiêu thụ A (Wh)": "600.0 Wh",
+      "Điện năng tiêu thụ A (kWh)": "0.6 kWh"
+    },
+    "Khuyến nghị thiết bị": {
+      "Aptomat bảo vệ (MCB)": "Aptomat MCB 10 A (Yêu cầu tối thiểu 6.25 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Dòng cắt tiêu chuẩn 6.0 kA (Chưa xét ngắn mạch)",
+      "Cầu chì khuyến nghị": "Cầu chì bảo vệ 10 A"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:37:58",
+    "Mã chức năng": "Đường dây - Sụt áp và Chọn cáp",
+    "Tên chức năng": "Tính Đường Dây, Tối Ưu Sụt Áp & Chọn Cáp / MCCB",
+    "Thông số đầu vào": {
+      "Công suất tính toán P (kW)": "35.0 kW",
+      "Chiều dài tuyến cáp L (m)": "250.0 m",
+      "Điện áp định mức lưới U (V)": "380.0 V",
+      "Hệ số công suất cosφ": "0.85",
+      "Hệ thống cung cấp điện": "Mạng 3 Pha (3P+N)",
+      "Vật liệu ruột dẫn cáp": "Đồng (Cu)",
+      "Mật độ dòng kinh tế Jcp (A/mm²)": "5.0 A/mm²",
+      "Giới hạn sụt áp cho phép ΔUmax (%)": "5.0 %"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện làm việc tính toán Itt (A)": "62.561 A",
+      "Tiết diện sơ bộ theo mật độ dòng Jcp (mm²)": "12.51 mm²",
+      "Tiết diện cáp thỏa phát nóng ban đầu (mm²)": "16.0 mm² (Sụt áp ban đầu: 6.81%)",
+      "Tiết diện cáp chuẩn sau tối ưu sụt áp (mm²)": "25.0 mm²",
+      "Dòng điện phát nóng lâu dài cho phép của cáp (A)": "108 A",
+      "Độ sụt áp thực tế trên đường dây ΔU (V)": "16.984 V",
+      "Tỷ lệ sụt áp thực tế ΔU (%)": "4.469 %",
+      "Tổn thất công suất tác dụng trên dây ΔP (W)": "2019.57 W",
+      "Quá trình lặp kiểm tra tiết diện": "[16.0 mm²: ΔU = 6.81% (KHÔNG ĐẠT (Tăng cấp tiết diện))] -> [25.0 mm²: ΔU = 4.47% (ĐẠT CHUẨN)]"
+    },
+    "Khuyến nghị thiết bị": {
+      "Quy cách cáp điện khuyến nghị": "Cáp Đồng (Cu) 4×25.0 mm² (Dòng cho phép Icp = 108 A)",
+      "Aptomat khối bảo vệ tổng (MCCB)": "MCCB 3P 80 A (Yêu cầu tối thiểu 78.20 A)",
+      "Thiết bị bảo vệ chống dòng rò (RCCB/ELCB)": "Aptomat chống rò RCCB/ELCB 80 A - Dòng rò tác động 100 mA / 300 mA (Chống cháy nổ Công nghiệp)",
+      "Kết luận kiểm tra kỹ thuật": "Đạt chuẩn sụt áp cho phép (ΔU% = 4.47% ≤ 5.0%)"
+    },
+    "Dữ liệu bổ sung": {
+      "Các bước lặp": [
+        {
+          "Tiết diện (mm²)": 16.0,
+          "Dòng cho phép (A)": 82,
+          "Sụt áp (V)": 25.89,
+          "Tỷ lệ sụt áp (%)": 6.81,
+          "Tổn thất công suất (W)": 3155.58,
+          "Kết luận": "KHÔNG ĐẠT (Tăng cấp tiết diện)"
+        },
+        {
+          "Tiết diện (mm²)": 25.0,
+          "Dòng cho phép (A)": 108,
+          "Sụt áp (V)": 16.98,
+          "Tỷ lệ sụt áp (%)": 4.47,
+          "Tổn thất công suất (W)": 2019.57,
+          "Kết luận": "ĐẠT CHUẨN"
+        }
+      ]
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:37:55",
+    "Mã chức năng": "Mạch 1 Pha - Bù công suất phản kháng",
+    "Tên chức năng": "Tính Bù Công Suất Phản Kháng cosφ & Chọn Tụ Bù",
+    "Thông số đầu vào": {
+      "Công suất tác dụng của tải P (kW)": "50.0 kW",
+      "Hệ số công suất trước khi bù (cosφ1)": "0.7",
+      "Hệ số công suất mục tiêu sau bù (cosφ2)": "0.95",
+      "Điện áp lưới U (V)": "220.0 V",
+      "Tần số lưới điện f (Hz)": "50.0 Hz"
+    },
+    "Kết quả tính toán": {
+      "Hệ số tanφ1 (Trước khi bù)": "1.0202",
+      "Hệ số tanφ2 (Sau khi bù)": "0.3287",
+      "Dung lượng bù phản kháng cần thiết Qc (kVAR)": "34.576 kVAR",
+      "Điện dung tụ bù tính toán C (µF)": "2273.94 µF",
+      "Dòng điện định mức qua tụ bù lý thuyết (A)": "157.164 A",
+      "Dòng điện làm việc thực tế của bộ tụ chọn (A)": "181.818 A"
+    },
+    "Khuyến nghị thiết bị": {
+      "Dung lượng bộ tụ bù khuyến nghị": "Tụ bù tiêu chuẩn 40.0 kVAR (Điện dung tương đương 2630.7 µF)",
+      "Aptomat đóng cắt & bảo vệ tụ bù": "Aptomat bảo vệ tụ bù 315 A (Chọn từ 1.5 × Ic = 272.73 A)"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:37:53",
+    "Mã chức năng": "Mạch 3 Pha - Động cơ không đồng bộ",
+    "Tên chức năng": "Tính Toán Động Cơ Không Đồng Bộ 3 Pha",
+    "Thông số đầu vào": {
+      "Công suất cơ định mức Pđm (kW)": "11.0 kW",
+      "Điện áp dây định mức Ud (V)": "380.0 V",
+      "Tần số lưới điện f (Hz)": "50.0 Hz",
+      "Số đôi cực từ p": "2 đôi cực (4 cực)",
+      "Tốc độ quay thực tế n (vòng/phút)": "1450.0 vòng/phút",
+      "Hệ số công suất cosφ": "0.85",
+      "Hiệu suất động cơ η": "89.0 % (Hệ số 0.89)"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện định mức động cơ Iđm (A)": "22.092 A",
+      "Tốc độ từ trường quay đồng bộ ns (vòng/phút)": "1500.0 vòng/phút",
+      "Hệ số trượt tốc độ s (%)": "3.333 %",
+      "Mô-men xoắn định mức trên trục M (N·m)": "72.448 N·m",
+      "Công suất điện tiêu thụ đầu vào P1 (kW)": "12.36 kW"
+    },
+    "Khuyến nghị thiết bị": {
+      "Khởi động từ (Contactor)": "Khởi động từ (Contactor) 3P LC1D32 (32A) (Yêu cầu tối thiểu 27.62 A)",
+      "Rơ le nhiệt bảo vệ quá tải": "Rơ le nhiệt LRD22 (16.0 - 24.0A) (Cài đặt dòng tác động tại 22.09 A)"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:36:33",
+    "Mã chức năng": "Mạch DC - Định luật Ohm",
+    "Tên chức năng": "Định luật Ohm DC & Công suất - Điện năng",
+    "Thông số đầu vào": {
+      "Điện áp nguồn U (V)": "24.0 V",
+      "Điện trở tải R (Ω)": "4.8 Ω",
+      "Thời gian làm việc t (giờ)": "5.0 giờ"
+    },
+    "Kết quả tính toán": {
+      "Cường độ dòng điện I (A)": "5.0 A",
+      "Công suất tiêu thụ P (W)": "120.0 W",
+      "Điện năng tiêu thụ A (Wh)": "600.0 Wh",
+      "Điện năng tiêu thụ A (kWh)": "0.6 kWh"
+    },
+    "Khuyến nghị thiết bị": {
+      "Aptomat bảo vệ (MCB)": "Aptomat MCB 10 A (Yêu cầu tối thiểu 6.25 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Dòng cắt tiêu chuẩn 6.0 kA (Chưa xét ngắn mạch)",
+      "Cầu chì khuyến nghị": "Cầu chì bảo vệ 10 A"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:34:46",
+    "Mã chức năng": "Mạch 3 Pha - Động cơ không đồng bộ",
+    "Tên chức năng": "Tính Toán Động Cơ Không Đồng Bộ 3 Pha",
+    "Thông số đầu vào": {
+      "Công suất cơ định mức Pđm (kW)": "11.0 kW",
+      "Điện áp dây định mức Ud (V)": "380.0 V",
+      "Tần số lưới điện f (Hz)": "50.0 Hz",
+      "Số đôi cực từ p": "2 đôi cực (4 cực)",
+      "Tốc độ quay thực tế n (vòng/phút)": "1450.0 vòng/phút",
+      "Hệ số công suất cosφ": "0.85",
+      "Hiệu suất động cơ η": "89.0 % (Hệ số 0.89)"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện định mức động cơ Iđm (A)": "22.092 A",
+      "Tốc độ từ trường quay đồng bộ ns (vòng/phút)": "1500.0 vòng/phút",
+      "Hệ số trượt tốc độ s (%)": "3.333 %",
+      "Mô-men xoắn định mức trên trục M (N·m)": "72.448 N·m",
+      "Công suất điện tiêu thụ đầu vào P1 (kW)": "12.36 kW"
+    },
+    "Khuyến nghị thiết bị": {
+      "Khởi động từ (Contactor)": "Khởi động từ (Contactor) 3P LC1D32 (32A) (Yêu cầu tối thiểu 27.62 A)",
+      "Rơ le nhiệt bảo vệ quá tải": "Rơ le nhiệt LRD22 (16.0 - 24.0A) (Cài đặt dòng tác động tại 22.09 A)"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:34:44",
+    "Mã chức năng": "Mạch DC - Ngắn mạch và MCB",
+    "Tên chức năng": "Tính Dòng Ngắn Mạch & Chọn MCB / Cầu Chì",
+    "Thông số đầu vào": {
+      "Điện áp pha Up (V)": "220.0 V",
+      "Tổng trở mạch vòng ngắn mạch ZΣ (Ω)": "0.045 Ω",
+      "Dòng điện làm việc của tải Itt (A)": "18.5 A"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện ngắn mạch Ink (A)": "4888.89 A",
+      "Dòng điện ngắn mạch Ink (kA)": "4.8889 kA",
+      "Dòng định mức MCB tối thiểu (1.25 × Itt)": "23.12 A"
+    },
+    "Khuyến nghị thiết bị": {
+      "Aptomat bảo vệ (MCB)": "Aptomat MCB 25 A (Yêu cầu tối thiểu 23.12 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Dòng cắt ngắn mạch Icu = 6.0 kA (Dòng ngắn mạch tính toán = 4.89 kA)",
+      "Cầu chì khuyến nghị": "Cầu chì bảo vệ 25 A"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:34:43",
+    "Mã chức năng": "Mạch DC - Pin và Ắc quy",
+    "Tên chức năng": "Tính Thời Gian Xả Pin / Ắc Quy & Bảo Vệ",
+    "Thông số đầu vào": {
+      "Dung lượng bình ắc quy C (Ah)": "100.0 Ah",
+      "Điện áp định mức ắc quy V (V)": "12.0 V",
+      "Công suất tải tiêu thụ P (W)": "200.0 W",
+      "Hệ số xả sâu cho phép (DoD)": "80.0 % (Hệ số 0.8)",
+      "Hiệu suất bộ chuyển đổi (η)": "90.0 % (Hệ số 0.9)"
+    },
+    "Kết quả tính toán": {
+      "Điện năng khả dụng thực tế (Wh)": "864.0 Wh",
+      "Dòng điện xả từ ắc quy (A)": "18.519 A",
+      "Thời gian duy trì cấp điện (giờ)": "4.32 giờ",
+      "Thời gian duy trì cấp điện (phút)": "259.2 phút"
+    },
+    "Khuyến nghị thiết bị": {
+      "Aptomat bảo vệ (MCB)": "Aptomat MCB 25 A (Yêu cầu tối thiểu 23.15 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Dòng cắt tiêu chuẩn 6.0 kA (Chưa xét ngắn mạch)",
+      "Cầu chì khuyến nghị": "Cầu chì bảo vệ 25 A",
+      "Thiết bị bảo vệ mạch ắc quy": "Cầu chì DC / MCB DC bảo vệ nhánh ắc quy (Dòng xả: 18.52 A)"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:34:40",
+    "Mã chức năng": "Mạch DC - Ghép điện trở",
+    "Tên chức năng": "Ghép Điện Trở Nối Tiếp / Song Song",
+    "Thông số đầu vào": {
+      "Danh sách các điện trở (Ω)": "10.0 Ω, 20.0 Ω, 30.0 Ω",
+      "Sơ đồ ghép nối": "Ghép nối tiếp",
+      "Điện áp nguồn cấp U (V)": "120.0 V"
+    },
+    "Kết quả tính toán": {
+      "Kiểu đấu nối điện trở": "Ghép nối tiếp",
+      "Số lượng điện trở thành phần": "3 điện trở",
+      "Điện trở tương đương (Rtđ)": "60.0 Ω",
+      "Dòng điện tổng toàn mạch I (A)": "2.0 A",
+      "Công suất tiêu thụ tổng P (W)": "240.0 W"
+    },
+    "Khuyến nghị thiết bị": {
+      "Thông số mạng điện trở": "Điện trở tương đương Rtđ = 60.0000 Ω (Ghép nối tiếp)",
+      "Aptomat bảo vệ (MCB)": "Aptomat MCB 6 A (Yêu cầu tối thiểu 2.50 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Dòng cắt tiêu chuẩn 6.0 kA (Chưa xét ngắn mạch)",
+      "Cầu chì khuyến nghị": "Cầu chì bảo vệ 4 A"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:34:37",
+    "Mã chức năng": "Mạch DC - Điện trở dây dẫn",
+    "Tên chức năng": "Điện trở dây dẫn & Biến thiên theo nhiệt độ",
+    "Thông số đầu vào": {
+      "Điện trở suất ρ (Ω·mm²/m)": "0.0172 Ω·mm²/m",
+      "Chiều dài dây dẫn l (m)": "100.0 m",
+      "Tiết diện dây dẫn S (mm²)": "4.0 mm²",
+      "Nhiệt độ làm việc T (°C)": "70.0 °C",
+      "Hệ số nhiệt điện trở α (1/°C)": "0.00393 /°C"
+    },
+    "Kết quả tính toán": {
+      "Điện trở dây ở 20°C (R20)": "0.43 Ω",
+      "Điện trở dây ở nhiệt độ làm việc R(T)": "0.514495 Ω",
+      "Tỷ lệ biến thiên điện trở (%)": "19.65 %"
+    },
+    "Khuyến nghị thiết bị": {
+      "Đánh giá thông số dây dẫn": "Dây tiết diện 4.0 mm² dài 100.0 m tại 70.0°C có điện trở 0.51449 Ω"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 23:34:29",
+    "Mã chức năng": "Mạch DC - Định luật Ohm",
+    "Tên chức năng": "Định luật Ohm DC & Công suất - Điện năng",
+    "Thông số đầu vào": {
+      "Điện áp nguồn U (V)": "24.0 V",
+      "Điện trở tải R (Ω)": "4.8 Ω",
+      "Thời gian làm việc t (giờ)": "5.0 giờ"
+    },
+    "Kết quả tính toán": {
+      "Cường độ dòng điện I (A)": "5.0 A",
+      "Công suất tiêu thụ P (W)": "120.0 W",
+      "Điện năng tiêu thụ A (Wh)": "600.0 Wh",
+      "Điện năng tiêu thụ A (kWh)": "0.6 kWh"
+    },
+    "Khuyến nghị thiết bị": {
+      "Aptomat bảo vệ (MCB)": "Aptomat MCB 10 A (Yêu cầu tối thiểu 6.25 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Dòng cắt tiêu chuẩn 6.0 kA (Chưa xét ngắn mạch)",
+      "Cầu chì khuyến nghị": "Cầu chì bảo vệ 10 A"
+    }
+  },
+  {
+    "Thời gian tính toán": "2026-11-12 16:32:03",
+    "Mã chức năng": "Mạch 3 Pha - Động cơ không đồng bộ",
+    "Tên chức năng": "Tính Toán Động Cơ Không Đồng Bộ 3 Pha",
+    "Thông số đầu vào": {
+      "Công suất cơ định mức Pđm (kW)": "11.0 kW",
+      "Điện áp dây định mức Ud (V)": "380 V",
+      "Tần số lưới điện f (Hz)": "50 Hz",
+      "Số đôi cực từ p": "2 đôi cực (4 cực)",
+      "Tốc độ quay thực tế n (vòng/phút)": "1450 vòng/phút",
+      "Hệ số công suất cosφ": "0.85",
+      "Hiệu suất động cơ η": "89.0 % (Hệ số 0.89)"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện định mức động cơ Iđm (A)": "22.092 A",
+      "Tốc độ từ trường quay đồng bộ ns (vòng/phút)": "1500.0 vòng/phút",
+      "Hệ số trượt tốc độ s (%)": "3.333 %",
+      "Mô-men xoắn định mức trên trục M (N·m)": "72.448 N·m",
+      "Công suất điện tiêu thụ đầu vào P1 (kW)": "12.36 kW"
+    },
+    "Khuyến nghị thiết bị": {
+      "Khởi động từ (Contactor)": "Khởi động từ (Contactor) 3P LC1D32 (32A) (Yêu cầu tối thiểu 27.62 A)",
+      "Rơ le nhiệt bảo vệ quá tải": "Rơ le nhiệt LRD22 (16.0 - 24.0A) (Cài đặt dòng tác động tại 22.09 A)"
+    }
+  }
+]

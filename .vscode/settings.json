@@ -1,0 +1,11 @@
+{
+  "python.analysis.extraPaths": [
+    ".",
+    "./electrical_calculator_app",
+    "${workspaceFolder}",
+    "${workspaceFolder}/electrical_calculator_app"
+  ],
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none"
+  }
+}
